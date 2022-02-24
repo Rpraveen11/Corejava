@@ -68,7 +68,7 @@ for(i=0;i<row;i++)
 
 int sum[][]=new int [row][column];
 
-	System.out.println("sum of matrices : ");
+	System.out.println("Addition of two matrices : ");
 	for(i=0;i<row;i++)
 	{
 		for( j=0;j<column;j++)
@@ -78,7 +78,37 @@ int sum[][]=new int [row][column];
 		}
 		System.out.println();
 	}
-	
+	System.out.println("Subtraction of two matrices : ");
+	for(i=0;i<row;i++)
+	{
+		for( j=0;j<column;j++)
+		{
+			 sum[i][j]=arr1[i][j]-arr2[i][j];
+			System.out.print(sum[i][j]+  " ");
+		}
+		System.out.println();
+	}
+	System.out.println("Multiplication of two matrices : ");
+	for(i=0;i<row;i++)
+	{
+		for( j=0;j<column;j++)
+		{
+			 sum[i][j]=arr1[i][j]*arr2[i][j];
+			System.out.print(sum[i][j]+" ");
+		}
+		System.out.println();
+	}
+	double sum1[][]=new double [row][column];
+	System.out.println("Division of two matrices : ");
+	for(i=0;i<row;i++)
+	{
+		for( j=0;j<column;j++)
+		{
+			 sum[i][j]=arr1[i][j]/arr2[i][j];
+			System.out.print(sum[i][j]+" ");
+		}
+		System.out.println();
+	}
 }
 	public static void main(String[] args) {
 		TwodimArray t=new TwodimArray();
